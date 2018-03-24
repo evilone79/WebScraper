@@ -13,13 +13,10 @@ namespace parsers
 
 RegexSearchPolicy::RegexSearchPolicy()
 {
-	// TODO Auto-generated constructor stub
-
 }
 
 RegexSearchPolicy::~RegexSearchPolicy()
-{
-	// TODO Auto-generated destructor stub
+{	
 }
 
 SearchResult RegexSearchPolicy::apply(std::string const& content, std::string searchTemplate)
