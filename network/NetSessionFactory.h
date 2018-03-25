@@ -14,9 +14,16 @@
 namespace network
 {
 
+/**
+ * Abstract factory for specific NetSession implementation
+ */
 class NetSessionFactory
 {
 public:
+  /**
+   * Creates an instance of specific NetSession implementation
+   * @return
+   */
 	virtual std::shared_ptr<NetSession> create_session() = 0;
 	virtual ~NetSessionFactory(){}
 };

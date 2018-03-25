@@ -10,10 +10,13 @@
 
 #include <string>
 
+/**
+ * Source URL data descriptor
+ */
 struct UrlDescriptor
 {
-	std::string hostname;
-	std::string path;
+	std::string hostname; // web site hostname
+	std::string path;     // path to resource
 };
 
 

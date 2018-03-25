@@ -13,6 +13,9 @@
 namespace parsers
 {
 
+/**
+ * Concrete policy for regex based search
+ */
 class RegexSearchPolicy : public SearchPolicy
 {
 public:

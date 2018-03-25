@@ -22,6 +22,10 @@ public:
 	TaskRunner();
 	virtual ~TaskRunner();
 
+	/**
+	 * Submits the task for execution in task pool
+	 * @param task
+	 */
 	void submit(task_t&& task);
 	void teardown();
 

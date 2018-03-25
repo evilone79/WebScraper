@@ -18,6 +18,9 @@
 namespace dal
 {
 
+/**
+ * Product DAL implementation based on MySql database.
+ */
 class ProductDalMySql: public virtual ProductDal
 {
 public:

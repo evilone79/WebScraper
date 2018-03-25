@@ -17,6 +17,11 @@ namespace parsers
 class SearchPolicyFactory
 {
 public:
+  /**
+   * Returns search policy implementation
+   * @param policyType
+   * @return SearchPolicy
+   */
 	std::shared_ptr<SearchPolicy> get_search_policy(SearchPolicyType policyType);
 };
 

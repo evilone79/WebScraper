@@ -13,16 +13,23 @@
 namespace parsers
 {
 
+/**
+ * Enumerates available text search mechanisms
+ */
 enum class SearchPolicyType
 {
 	SIMPLE,
 	REGEX, //etc.
 };
+
+/**
+ * Describes a search rule for particular data item
+ */
 struct SearchRule
 {
-	std::string data_id;
-	std::string search_template;
-	SearchPolicyType search_policy_type;
+	std::string data_id;                  //data item identifier
+	std::string search_template;          //search pattern to be used with particular search policy
+	SearchPolicyType search_policy_type;  //the type of search policy
 };
 
 }

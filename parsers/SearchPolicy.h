@@ -23,7 +23,13 @@ class SearchPolicy
 {
 public:
 	virtual ~SearchPolicy() {}
-	virtual SearchResult apply(std::string const& content,  std::string searchTemplate) = 0;
+	/**
+	 * Performs the actual search on given text using the template provided
+	 * @param content
+	 * @param searchTemplate
+	 * @return SearchResult
+	 */
+	virtual  apply(std::string const& content,  std::string searchTemplate) = 0;
 };
 
 }

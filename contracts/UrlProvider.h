@@ -11,10 +11,17 @@
 #include "UrlDescriptor.h"
 #include <vector>
 
+/**
+ * Interface responsible for providing source URLs, be it file, centralized repository, etc.
+ */
 class UrlProvider
 {
 public:
 	virtual ~UrlProvider(){}
+	/**
+	 * Returns available or pre-configured pack of URLs
+	 * @return
+	 */
 	virtual std::vector<UrlDescriptor> get_url_pack() = 0;
 };
 

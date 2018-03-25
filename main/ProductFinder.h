@@ -14,7 +14,10 @@
 #include "../parsers/SearchPolicyFactory.h"
 #include <vector>
 
-
+/**
+ * Component, responsible for actually running a concurrent search
+ * on given web page content and generate a product entity
+ */
 class ProductFinder
 {
 public:
@@ -27,7 +30,14 @@ public:
 			);
 	virtual ~ProductFinder();
 
+	/**
+	 * Invokes a concurrent search. The method blocks until all searches rendezvous
+	 */
 	void run_search();
+	/**
+	 * Sets the callback to be invoked upon the product readiness
+	 * @param onProduct
+	 */
 	void on_product_ready(product_callback_t onProduct);
 
 protected:

@@ -17,14 +17,9 @@ SimpleUrlProvider::~SimpleUrlProvider()
 
 std::vector<UrlDescriptor> SimpleUrlProvider::get_url_pack()
 {
-	if(times2get > 0)
-	{
-		--times2get;
-		return
-			{
-				{"www.ebay.com", "/itm/M5-Wireless-WIFI-Audiocast-Airplay-DLNA-Music-Box-Streaming-Receiver-Player-N8T1/263384863504?epid=2075483707&hash=item3d52f61310:g:m4MAAOSw~HBaMDl2"},
-				{"www.amazon.com", "/dp/B01DFKC2SO"}
-			};
-	}
-	return {};
+  return
+    {
+        { "www.ebay.com", "/itm/M5-Wireless-WIFI-Audiocast-Airplay-DLNA-Music-Box-Streaming-Receiver-Player-N8T1/263384863504?epid=2075483707&hash=item3d52f61310:g:m4MAAOSw~HBaMDl2"},
+        { "www.amazon.com", "/dp/B01DFKC2SO"}
+    };
 }

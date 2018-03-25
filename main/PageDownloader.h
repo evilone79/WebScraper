@@ -14,10 +14,17 @@
 #include <mutex>
 #include <atomic>
 
-
+/**
+ * COncrete implementation for textual web content downloading
+ */
 class PageDownloader: public Downloader
 {
 public:
+  /**
+   * ctor
+   * @param netFactory - reference to session factory
+   * @param maxConnections - maximum downloads allowed to run at the same time
+   */
 	PageDownloader(network::NetSessionFactory& netFactory, uint8_t maxConnections);
 	virtual ~PageDownloader();
 

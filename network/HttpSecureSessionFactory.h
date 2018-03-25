@@ -17,6 +17,9 @@
 namespace network
 {
 
+/**
+ * Concrete SSL aware NetSession factory, based on boost::asio
+ */
 class HttpSecureSessionFactory : public NetSessionFactory
 {
 public:

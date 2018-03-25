@@ -21,6 +21,9 @@ namespace network
 using boost::asio::ip::tcp;
 namespace ssl = boost::asio::ssl;
 
+/**
+ * Concrete SSL aware NetSession implementation, based on boost::asio
+ */
 class HttpSecureSession : public NetSession,
 						  public std::enable_shared_from_this<HttpSecureSession>
 {

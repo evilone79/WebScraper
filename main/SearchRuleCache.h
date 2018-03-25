@@ -12,12 +12,20 @@
 #include <unordered_map>
 #include <vector>
 
+/**
+ * Component responsible for loading and caching of search rule sets from dedicated storage
+ */
 class SearchRuleCache
 {
 public:
 	SearchRuleCache();
 	virtual ~SearchRuleCache();
 
+	/**
+	 * Returns a rule set for particular host
+	 * @param host
+	 * @return
+	 */
 	std::vector<parsers::SearchRule> get_ruleset_by_host(std::string const& host);
 	void preload_ruleset();
 

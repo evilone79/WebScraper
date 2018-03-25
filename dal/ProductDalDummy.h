@@ -14,6 +14,9 @@
 namespace dal
 {
 
+/**
+ * Dummy implementation for Product DAL. Just prints out the Product being inserted
+ */
 class ProductDalDummy: public virtual ProductDal
 {
 public:

@@ -10,6 +10,9 @@
 
 #include "../contracts/UrlProvider.h"
 
+/**
+ * Dummy implementation of URL provider for demonstration purposes
+ */
 class SimpleUrlProvider : public UrlProvider
 {
 public:
@@ -19,7 +22,6 @@ public:
 	virtual std::vector<UrlDescriptor> get_url_pack() override;
 
 private:
-	int times2get = 1;
 };
 
 #endif /* SIMPLEURLPROVIDER_H_ */
