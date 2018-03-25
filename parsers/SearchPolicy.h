@@ -29,7 +29,7 @@ public:
 	 * @param searchTemplate
 	 * @return SearchResult
 	 */
-	virtual  apply(std::string const& content,  std::string searchTemplate) = 0;
+	virtual SearchResult apply(std::string const& content,  std::string searchTemplate) = 0;
 };
 
 }

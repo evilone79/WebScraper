@@ -8,7 +8,7 @@
 #ifndef PRODUCT_H_
 #define PRODUCT_H_
 
-#include "DataDescriptor.h"
+
 #include <unordered_map>
 #include <sstream>
 
